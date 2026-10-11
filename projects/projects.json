@@ -1,0 +1,15 @@
+{
+  "projects": [
+    {
+      "title": "Proyecto de ejemplo",
+      "slug": "proyecto-de-ejemplo",
+      "category": "Diseño editorial",
+      "description": "Reemplaza este contenido con uno de tus proyectos.",
+      "body": "Describe aquí el contexto, el concepto, el proceso y el resultado del proyecto.",
+      "cover": "",
+      "cover_alt": "Imagen de portada del proyecto",
+      "gallery": [],
+      "published": false
+    }
+  ]
+}
