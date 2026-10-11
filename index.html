@@ -4,58 +4,69 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Portafolio de diseño gráfico, editorial e identidad visual.">
-  <title>Portafolio — Diseñadora</title>
+  <title>Portafolio — Diseño gráfico</title>
   <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-  <header class="site-header">
-    <a class="wordmark" href="/" aria-label="Ir al inicio">PORTAFOLIO<span>®</span></a>
+  <header class="site-header" id="inicio">
+    <a class="brand" href="#inicio" aria-label="Volver al inicio">
+      <span class="brand-name">Tu nombre — Diseñadora</span>
+      <span class="brand-subtitle">Diseño gráfico, editorial e identidad visual</span>
+    </a>
     <nav aria-label="Navegación principal">
-      <a href="#proyectos">Proyectos</a>
-      <a href="#sobre-mi">Sobre mí</a>
-      <a href="#contacto">Contacto</a>
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
     </nav>
-    <a class="header-note" href="https://www.behance.net/" target="_blank" rel="noreferrer">Behance ↗</a>
   </header>
 
   <main>
-    <section class="intro">
-      <p class="eyebrow">DISEÑO · INVESTIGACIÓN · NARRATIVAS VISUALES</p>
-      <h1>Ideas que conectan<br><em>personas, historias y territorios.</em></h1>
-      <div class="intro-bottom">
-        <p>Portafolio de diseño gráfico con una mirada sensible, editorial y experimental.</p>
-        <a class="text-link" href="#proyectos">Explorar proyectos ↓</a>
+    <section class="intro-panel" aria-labelledby="intro-title">
+      <div class="intro-copy">
+        <p class="intro-kicker">PORTAFOLIO DE DISEÑO · TEMUCO, CHILE</p>
+        <h1 id="intro-title">Hola, soy diseñadora. Transformo ideas e historias en experiencias visuales.</h1>
+        <p class="intro-description">Exploro el diseño gráfico, la narrativa visual y la experimentación desde una mirada sensible, editorial y territorial.</p>
+        <div class="social-links" aria-label="Enlaces de contacto">
+          <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer" aria-label="LinkedIn">in</a>
+          <a href="mailto:tu-correo@ejemplo.cl" aria-label="Enviar correo electrónico" class="mail-icon">✉</a>
+        </div>
       </div>
     </section>
 
-    <section id="proyectos" class="projects-section">
+    <section class="work-section" id="work">
       <div class="section-heading">
-        <h2>Proyectos seleccionados</h2>
-        <span id="project-count">Cargando proyectos…</span>
+        <div>
+          <p class="eyebrow">PORTAFOLIO</p>
+          <h2>Work <span>— proyectos seleccionados</span></h2>
+        </div>
+        <span id="project-count" class="project-count">Cargando proyectos…</span>
       </div>
       <div id="projects-grid" class="projects-grid" aria-live="polite"></div>
-      <p id="empty-message" class="empty-message" hidden>Aún no hay proyectos publicados. Cuando agregues tus trabajos desde el panel de administración, aparecerán aquí.</p>
+      <p id="empty-message" class="empty-message" hidden>Aún no hay proyectos publicados. Cuando agregues tus trabajos, aparecerán aquí.</p>
     </section>
 
-    <section id="sobre-mi" class="about-section">
-      <p class="eyebrow">UN POCO SOBRE MÍ</p>
-      <div>
+    <section class="about-section" id="about">
+      <p class="eyebrow">ABOUT / SOBRE MÍ</p>
+      <div class="about-copy">
         <h2>Diseñar también es una forma de escuchar.</h2>
-        <p>Me interesa el diseño como puente entre historias, memorias, identidades y territorios. Exploro procesos visuales que combinan investigación, sensibilidad y experimentación.</p>
+        <p>Me interesa el diseño como puente entre historias, memorias, identidades y territorios. Trabajo desde la investigación y la experimentación para construir narrativas visuales sensibles, claras y significativas.</p>
       </div>
     </section>
 
-    <section id="contacto" class="contact-section">
-      <p class="eyebrow">¿TRABAJAMOS JUNTAS?</p>
-      <h2>Conversemos sobre<br><em>lo que podemos crear.</em></h2>
-      <a class="text-link" href="mailto:hola@tucorreo.cl">Escríbeme por correo ↗</a>
+    <section class="contact-section" id="contact">
+      <div>
+        <p class="eyebrow">CONTACTO</p>
+        <h2>¿Tienes una idea<br>en mente?</h2>
+      </div>
+      <a class="contact-link" href="mailto:tu-correo@ejemplo.cl">Conversemos ↗</a>
     </section>
   </main>
 
-  <footer>
-    <span>Portafolio de diseño</span>
-    <span>Hecho con intención y curiosidad.</span>
+  <footer class="site-footer">
+    <span>Portafolio de diseño gráfico</span>
+    <span>Temuco, Chile</span>
     <a href="/admin/">Administración</a>
+    <a href="#inicio" class="back-to-top" aria-label="Volver arriba">↑</a>
   </footer>
 
   <script src="/js/projects.js"></script>
