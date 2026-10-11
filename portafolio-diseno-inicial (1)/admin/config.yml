@@ -1,0 +1,35 @@
+backend:
+  name: github
+  repo: Entonomagenta-cmd/portafolio-diseno
+  branch: main
+
+media_folder: "images"
+public_folder: "/images"
+locale: "es"
+
+collections:
+  - name: "contenido"
+    label: "Contenido del portafolio"
+    files:
+      - label: "Proyectos"
+        name: "proyectos"
+        file: "projects/projects.json"
+        fields:
+          - label: "Proyectos"
+            name: "projects"
+            widget: "list"
+            summary: "{{fields.title}} — {{fields.category}}"
+            fields:
+              - { label: "Título", name: "title", widget: "string" }
+              - { label: "URL corta (sin espacios)", name: "slug", widget: "string", hint: "Ejemplo: fanzine-tres-pascualas" }
+              - { label: "Categoría", name: "category", widget: "string" }
+              - { label: "Descripción breve", name: "description", widget: "text" }
+              - { label: "Texto del proyecto", name: "body", widget: "markdown", required: false }
+              - { label: "Imagen de portada", name: "cover", widget: "image", required: false }
+              - { label: "Texto alternativo de la portada", name: "cover_alt", widget: "string", required: false }
+              - label: "Galería de imágenes"
+                name: "gallery"
+                widget: "list"
+                required: false
+                field: { label: "Imagen", name: "image", widget: "image" }
+              - { label: "Publicado", name: "published", widget: "boolean", default: true }
